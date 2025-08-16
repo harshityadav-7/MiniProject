@@ -6,12 +6,41 @@
     <title>Snake Mania</title>
 </head>
 <body>
-    <h1>Welcome to Snake Mania!</h1>
-    <p>Get ready to enjoy the ultimate snake experience!</p>
-    <button id="start-button">Start</button>
+    <div class="main-title"><h1>SnakeMania</h1></div>
+    <div class="main-layout" style="justify-content:center; align-items:center;">
+        <aside class="left-panel">
+            <button id="pauseBtn">Pause</button>
+            <button id="restartBtn" style="display:none;">Restart</button>
+            <div class="profile-section">
+                <label for="profileSelect">Profile:</label>
+                <select id="profileSelect">
+                    <option value="doodle1">🐱</option>
+                    <option value="doodle2">🐸</option>
+                    <option value="doodle3">🐧</option>
+                    <option value="doodle4">🦄</option>
+                </select>
+                <div id="profilePreview">🐱</div>
+            </div>
+        </aside>
+        <section class="game-center">
+            <div id="game-container">
+                <canvas id="gameCanvas" width="800" height="500"></canvas>
+                <div id="game-over">Game Over!</div>
+            </div>
+            <div id="instructions">
+                Use Arrow Keys to control the snake.<br>
+                Eat food to grow. Avoid hitting walls or yourself!
+            </div>
+        </section>
+        <aside class="right-panel">
+            <div id="score">Score: 0</div>
+            <div id="highScore">High Score: 0</div>
+            <div id="levelInfo">Level: Easy</div>
+        </aside>
+    </div>
     <script src="script.js"></script>
     <footer>
-        <p>&copy; 2023 Snake Mania. All rights reserved.</p>
+        <p>&copy; 2025 Snake Mania. All rights reserved.</p>
     </footer>
 </body>
 </html>
